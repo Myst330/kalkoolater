@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
     char op;
-    double num1, num2;
+    double num1, num2, answer;
 
     cout << "enter operation: ";
     cin >> op;
@@ -16,17 +16,23 @@ int main() {
     cin >> num2;
 
     switch(op) {
+
         case '+':
-            cout << num1 + num2 << endl;
+            answer = num1 + num2;
+            cout << num1 op num2 << "=" << answer << endl;
         case '-':
-            cout << num1 - num2 << endl;
+            answer = num1 - num2;
+            cout << num1 op num2 << "=" << answer << endl;
         case '*':
-            cout << num1 * num2 << endl;
-        case '.':
-            cout << num1 / num2 << endl;
+            answer = num1 * num2;
+            cout << num1 op num2 << "=" << answer << endl;
+        case '/':
+            answer = num1 / num2;
+            cout << num1 op num2 << "=" << answer << endl;
 
 
     }
 
+    system("pause");
 
 }
