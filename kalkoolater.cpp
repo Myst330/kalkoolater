@@ -6,7 +6,10 @@ int main() {
 
     char op;
     double num1, num2, answer;
+<<<<<<< HEAD
 
+=======
+>>>>>>> school-testing
 
     cout << "enter operation: ";
     cin >> op;
@@ -18,20 +21,26 @@ int main() {
     cin >> num2;
 
     switch(op) {
+
         case '+':
             answer = num1 + num2;
-            
+            cout << num1 << "+" << num2 << "=" << answer << endl;
         case '-':
             answer = num1 - num2;
-            
+            cout << num1 << "-" << num2 << "=" << answer << endl;
         case '*':
             answer = num1 * num2;
-            
+            cout << num1 << "*" << num2 << "=" << answer << endl;
         case '/':
             answer = num1 / num2;
+            cout << num1 << "/" << num2 << "=" << answer << endl;
+
+
+>>>>>>> school-testing
     }
     cout << "Your answer is:" << answer << endl;
 
+    system("pause");
 
     system("pause");
 
