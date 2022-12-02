@@ -1,10 +1,12 @@
 #include <iostream>
+#include <Windows.h>
 using namespace std;
 
 int main() {
 
     char op;
-    double num1, num2;
+    double num1, num2, answer;
+
 
     cout << "enter operation: ";
     cin >> op;
@@ -17,16 +19,20 @@ int main() {
 
     switch(op) {
         case '+':
-            cout << num1 + num2 << endl;
+            answer = num1 + num2;
+            
         case '-':
-            cout << num1 - num2 << endl;
+            answer = num1 - num2;
+            
         case '*':
-            cout << num1 * num2 << endl;
-        case '.':
-            cout << num1 / num2 << endl;
-
-
+            answer = num1 * num2;
+            
+        case '/':
+            answer = num1 / num2;
     }
+    cout << "Your answer is:" << answer << endl;
 
+
+    system("pause");
 
 }
